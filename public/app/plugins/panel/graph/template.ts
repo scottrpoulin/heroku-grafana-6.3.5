@@ -1,31 +1,22 @@
-var template = `
-<div class="graph-wrapper" ng-class="{'graph-legend-rightside': ctrl.panel.legend.rightSide}">
-  <div class="graph-canvas-wrapper">
-
-    <div class="datapoints-warning" ng-show="ctrl.datapointsCount===0">
-      <span class="small" >
-        No datapoints <tip>No datapoints returned from metric query</tip>
-      </span>
-    </div>
-
-    <div class="datapoints-warning" ng-show="ctrl.datapointsOutside">
-      <span class="small">
-        Datapoints outside time range
-        <tip>Can be caused by timezone mismatch between browser and graphite server</tip>
-      </span>
-    </div>
-
-    <div grafana-graph class="histogram-chart" ng-dblclick="ctrl.zoomOut()">
-    </div>
-
+const template = `
+<div class="graph-panel" ng-class="{'graph-panel--legend-right': ctrl.panel.legend.rightSide}">
+  <div class="graph-panel__chart" grafana-graph ng-dblclick="ctrl.zoomOut()">
   </div>
 
-  <div class="graph-legend-wrapper" graph-legend></div>
+  <div class="graph-legend">
+    <div class="graph-legend-content" graph-legend></div>
   </div>
-
-<div class="clearfix"></div>
+  <div ng-if="ctrl.contextMenuCtrl.isVisible">
+    <graph-context-menu
+      items="ctrl.contextMenuCtrl.menuItems"
+      onClose="ctrl.onContextMenuClose"
+      getContextMenuSource="ctrl.contextMenuCtrl.getSource"
+      formatSourceDate="ctrl.formatDate"
+      x="ctrl.contextMenuCtrl.position.x"
+      y="ctrl.contextMenuCtrl.position.y"
+    ></graph-context-menu>
+  </div>
+</div>
 `;
 
 export default template;
-
-

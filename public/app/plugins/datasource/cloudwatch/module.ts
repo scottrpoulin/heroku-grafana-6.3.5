@@ -1,11 +1,8 @@
 import './query_parameter_ctrl';
 
-import {CloudWatchDatasource} from './datasource';
-import {CloudWatchQueryCtrl} from './query_ctrl';
-
-class CloudWatchConfigCtrl {
-  static templateUrl = 'partials/config.html';
-}
+import CloudWatchDatasource from './datasource';
+import { CloudWatchQueryCtrl } from './query_ctrl';
+import { CloudWatchConfigCtrl } from './config_ctrl';
 
 class CloudWatchAnnotationsQueryCtrl {
   static templateUrl = 'partials/annotations.editor.html';
@@ -17,4 +14,3 @@ export {
   CloudWatchConfigCtrl as ConfigCtrl,
   CloudWatchAnnotationsQueryCtrl as AnnotationsQueryCtrl,
 };
-

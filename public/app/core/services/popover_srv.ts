@@ -1,57 +1,78 @@
-///<reference path="../../headers/common.d.ts" />
-
-import config from 'app/core/config';
 import _ from 'lodash';
-import $ from 'jquery';
 import coreModule from 'app/core/core_module';
 import Drop from 'tether-drop';
 
-/** @ngInject **/
-function popoverSrv($compile, $rootScope) {
+/** @ngInject */
+function popoverSrv(this: any, $compile, $rootScope, $timeout) {
+  let openDrop = null;
 
-  this.show = function(options) {
-    var popoverScope = _.extend($rootScope.$new(true), options.model);
-    var drop;
+  this.close = () => {
+    if (openDrop) {
+      openDrop.close();
+    }
+  };
 
-    function destroyDrop() {
-      setTimeout(function() {
+  this.show = options => {
+    if (openDrop) {
+      openDrop.close();
+      openDrop = null;
+    }
+
+    const scope = _.extend($rootScope.$new(true), options.model);
+    let drop;
+
+    const cleanUp = () => {
+      setTimeout(() => {
+        scope.$destroy();
+
         if (drop.tether) {
           drop.destroy();
         }
-      });
-    }
 
-    popoverScope.dismiss = function() {
-      popoverScope.$destroy();
-      destroyDrop();
+        if (options.onClose) {
+          options.onClose();
+        }
+      });
+
+      openDrop = null;
     };
 
-    var contentElement = document.createElement('div');
+    scope.dismiss = () => {
+      drop.close();
+    };
+
+    const contentElement = document.createElement('div');
     contentElement.innerHTML = options.template;
 
-    $compile(contentElement)(popoverScope);
+    $compile(contentElement)(scope);
 
-    drop = new Drop({
-      target: options.element,
-      content: contentElement,
-      position: options.position,
-      classes: 'drop-popover',
-      openOn: options.openOn || 'hover',
-      hoverCloseDelay: 200,
-      tetherOptions: {
-        constraints: [{to: 'window', pin: true, attachment: "both"}]
+    $timeout(() => {
+      drop = new Drop({
+        target: options.element,
+        content: contentElement,
+        position: options.position,
+        classes: options.classNames || 'drop-popover',
+        openOn: options.openOn,
+        hoverCloseDelay: 200,
+        tetherOptions: {
+          constraints: [{ to: 'scrollParent', attachment: 'together' }],
+        },
+      });
+
+      drop.on('close', () => {
+        cleanUp();
+      });
+
+      openDrop = drop;
+      openDrop.open();
+    }, 100);
+
+    // return close function
+    return () => {
+      if (drop) {
+        drop.close();
       }
-    });
-
-    drop.on('close', () => {
-      popoverScope.dismiss({fromDropClose: true});
-      destroyDrop();
-      if (options.onClose) {
-        options.onClose();
-      }
-    });
-
-    setTimeout(() => { drop.open(); }, 10);
+    };
   };
 }
 

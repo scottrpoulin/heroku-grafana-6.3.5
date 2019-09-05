@@ -1,57 +1,71 @@
-///<reference path="../../../headers/common.d.ts" />
-
 import _ from 'lodash';
-import {
-  QueryPartDef,
-  QueryPart,
-  functionRenderer,
-  suffixRenderer,
-  identityRenderer,
-  quotedIdentityRenderer,
-} from 'app/core/components/query_part/query_part';
+import { QueryPartDef, QueryPart, functionRenderer, suffixRenderer } from 'app/core/components/query_part/query_part';
 
-var index = [];
-var categories = {
+const index: any[] = [];
+const categories: any = {
   Aggregations: [],
   Selectors: [],
   Transformations: [],
+  Predictors: [],
   Math: [],
   Aliasing: [],
   Fields: [],
 };
 
-function createPart(part): any {
-  var def = index[part.type];
+function createPart(part: any): any {
+  const def = index[part.type];
   if (!def) {
-    throw {message: 'Could not find query part ' + part.type};
+    throw { message: 'Could not find query part ' + part.type };
   }
 
   return new QueryPart(part, def);
-};
+}
 
 function register(options: any) {
   index[options.type] = new QueryPartDef(options);
   options.category.push(index[options.type]);
 }
 
-var groupByTimeFunctions = [];
+const groupByTimeFunctions: any[] = [];
 
-function aliasRenderer(part, innerExpr) {
+function aliasRenderer(part: { params: string[] }, innerExpr: string) {
   return innerExpr + ' AS ' + '"' + part.params[0] + '"';
 }
 
-function fieldRenderer(part, innerExpr) {
-  if (part.params[0] === '*')  {
+function fieldRenderer(part: { params: string[] }, innerExpr: any) {
+  if (part.params[0] === '*') {
     return '*';
   }
   return '"' + part.params[0] + '"';
 }
 
-function replaceAggregationAddStrategy(selectParts, partModel) {
+function replaceAggregationAddStrategy(selectParts: any[], partModel: { def: { type: string } }) {
   // look for existing aggregation
-  for (var i = 0; i < selectParts.length; i++) {
-    var part = selectParts[i];
+  for (let i = 0; i < selectParts.length; i++) {
+    const part = selectParts[i];
     if (part.def.category === categories.Aggregations) {
+      if (part.def.type === partModel.def.type) {
+        return;
+      }
+      // count distinct is allowed
+      if (part.def.type === 'count' && partModel.def.type === 'distinct') {
+        break;
+      }
+      // remove next aggregation if distinct was replaced
+      if (part.def.type === 'distinct') {
+        const morePartsAvailable = selectParts.length >= i + 2;
+        if (partModel.def.type !== 'count' && morePartsAvailable) {
+          const nextPart = selectParts[i + 1];
+          if (nextPart.def.category === categories.Aggregations) {
+            selectParts.splice(i + 1, 1);
+          }
+        } else if (partModel.def.type === 'count') {
+          if (!morePartsAvailable || selectParts[i + 1].def.type !== 'count') {
+            selectParts.splice(i + 1, 0, partModel);
+          }
+          return;
+        }
+      }
       selectParts[i] = partModel;
       return;
     }
@@ -64,12 +78,12 @@ function replaceAggregationAddStrategy(selectParts, partModel) {
   selectParts.splice(1, 0, partModel);
 }
 
-function addTransformationStrategy(selectParts, partModel) {
-  var i;
+function addTransformationStrategy(selectParts: any[], partModel: any) {
+  let i;
   // look for index to add transformation
   for (i = 0; i < selectParts.length; i++) {
-    var part = selectParts[i];
-    if (part.def.category === categories.Math  || part.def.category === categories.Aliasing) {
+    const part = selectParts[i];
+    if (part.def.category === categories.Math || part.def.category === categories.Aliasing) {
       break;
     }
   }
@@ -77,42 +91,43 @@ function addTransformationStrategy(selectParts, partModel) {
   selectParts.splice(i, 0, partModel);
 }
 
-function addMathStrategy(selectParts, partModel) {
-  var partCount = selectParts.length;
+function addMathStrategy(selectParts: any[], partModel: any) {
+  const partCount = selectParts.length;
   if (partCount > 0) {
     // if last is math, replace it
-    if (selectParts[partCount-1].def.type === 'math') {
-      selectParts[partCount-1] = partModel;
+    if (selectParts[partCount - 1].def.type === 'math') {
+      selectParts[partCount - 1] = partModel;
       return;
     }
     // if next to last is math, replace it
-    if (selectParts[partCount-2].def.type === 'math') {
-      selectParts[partCount-2] = partModel;
+    if (partCount > 1 && selectParts[partCount - 2].def.type === 'math') {
+      selectParts[partCount - 2] = partModel;
       return;
-    } else if (selectParts[partCount-1].def.type === 'alias') { // if last is alias add it before
-      selectParts.splice(partCount-1, 0, partModel);
+    } else if (selectParts[partCount - 1].def.type === 'alias') {
+      // if last is alias add it before
+      selectParts.splice(partCount - 1, 0, partModel);
       return;
     }
   }
   selectParts.push(partModel);
 }
 
-function addAliasStrategy(selectParts, partModel) {
-  var partCount = selectParts.length;
+function addAliasStrategy(selectParts: any[], partModel: any) {
+  const partCount = selectParts.length;
   if (partCount > 0) {
     // if last is alias, replace it
-    if (selectParts[partCount-1].def.type === 'alias') {
-      selectParts[partCount-1] = partModel;
+    if (selectParts[partCount - 1].def.type === 'alias') {
+      selectParts[partCount - 1] = partModel;
       return;
     }
   }
   selectParts.push(partModel);
 }
 
-function addFieldStrategy(selectParts, partModel, query) {
+function addFieldStrategy(selectParts: any, partModel: any, query: { selectModels: any[][] }) {
   // copy all parts
-  var parts = _.map(selectParts, function(part: any) {
-    return createPart({type: part.def.type, params: _.clone(part.params)});
+  const parts = _.map(selectParts, (part: any) => {
+    return createPart({ type: part.def.type, params: _.clone(part.params) });
   });
 
   query.selectModels.push(parts);
@@ -122,7 +137,7 @@ register({
   type: 'field',
   addStrategy: addFieldStrategy,
   category: categories.Fields,
-  params: [{type: 'field', dynamicLookup: true}],
+  params: [{ type: 'field', dynamicLookup: true }],
   defaultParams: ['value'],
   renderer: fieldRenderer,
 });
@@ -174,6 +189,15 @@ register({
 });
 
 register({
+  type: 'mode',
+  addStrategy: replaceAggregationAddStrategy,
+  category: categories.Aggregations,
+  params: [],
+  defaultParams: [],
+  renderer: functionRenderer,
+});
+
+register({
   type: 'sum',
   addStrategy: replaceAggregationAddStrategy,
   category: categories.Aggregations,
@@ -188,7 +212,13 @@ register({
   type: 'derivative',
   addStrategy: addTransformationStrategy,
   category: categories.Transformations,
-  params: [{ name: "duration", type: "interval", options: ['1s', '10s', '1m', '5m', '10m', '15m', '1h']}],
+  params: [
+    {
+      name: 'duration',
+      type: 'interval',
+      options: ['1s', '10s', '1m', '5m', '10m', '15m', '1h'],
+    },
+  ],
   defaultParams: ['10s'],
   renderer: functionRenderer,
 });
@@ -206,7 +236,13 @@ register({
   type: 'non_negative_derivative',
   addStrategy: addTransformationStrategy,
   category: categories.Transformations,
-  params: [{ name: "duration", type: "interval", options: ['1s', '10s', '1m', '5m', '10m', '15m', '1h']}],
+  params: [
+    {
+      name: 'duration',
+      type: 'interval',
+      options: ['1s', '10s', '1m', '5m', '10m', '15m', '1h'],
+    },
+  ],
   defaultParams: ['10s'],
   renderer: functionRenderer,
 });
@@ -221,11 +257,29 @@ register({
 });
 
 register({
+  type: 'non_negative_difference',
+  addStrategy: addTransformationStrategy,
+  category: categories.Transformations,
+  params: [],
+  defaultParams: [],
+  renderer: functionRenderer,
+});
+
+register({
   type: 'moving_average',
   addStrategy: addTransformationStrategy,
   category: categories.Transformations,
-  params: [{ name: "window", type: "number", options: [5, 10, 20, 30, 40]}],
+  params: [{ name: 'window', type: 'int', options: [5, 10, 20, 30, 40] }],
   defaultParams: [10],
+  renderer: functionRenderer,
+});
+
+register({
+  type: 'cumulative_sum',
+  addStrategy: addTransformationStrategy,
+  category: categories.Transformations,
+  params: [],
+  defaultParams: [],
   renderer: functionRenderer,
 });
 
@@ -241,15 +295,27 @@ register({
 register({
   type: 'time',
   category: groupByTimeFunctions,
-  params: [{ name: "interval", type: "time", options: ['auto', '1s', '10s', '1m', '5m', '10m', '15m', '1h'] }],
-  defaultParams: ['auto'],
+  params: [
+    {
+      name: 'interval',
+      type: 'time',
+      options: ['$__interval', '1s', '10s', '1m', '5m', '10m', '15m', '1h'],
+    },
+  ],
+  defaultParams: ['$__interval'],
   renderer: functionRenderer,
 });
 
 register({
   type: 'fill',
   category: groupByTimeFunctions,
-  params: [{ name: "fill", type: "string", options: ['none', 'null', '0', 'previous'] }],
+  params: [
+    {
+      name: 'fill',
+      type: 'string',
+      options: ['none', 'null', '0', 'previous', 'linear'],
+    },
+  ],
   defaultParams: ['null'],
   renderer: functionRenderer,
 });
@@ -258,8 +324,39 @@ register({
   type: 'elapsed',
   addStrategy: addTransformationStrategy,
   category: categories.Transformations,
-  params: [{ name: "duration", type: "interval", options: ['1s', '10s', '1m', '5m', '10m', '15m', '1h']}],
+  params: [
+    {
+      name: 'duration',
+      type: 'interval',
+      options: ['1s', '10s', '1m', '5m', '10m', '15m', '1h'],
+    },
+  ],
   defaultParams: ['10s'],
+  renderer: functionRenderer,
+});
+
+// predictions
+register({
+  type: 'holt_winters',
+  addStrategy: addTransformationStrategy,
+  category: categories.Predictors,
+  params: [
+    { name: 'number', type: 'int', options: [5, 10, 20, 30, 40] },
+    { name: 'season', type: 'int', options: [0, 1, 2, 5, 10] },
+  ],
+  defaultParams: [10, 2],
+  renderer: functionRenderer,
+});
+
+register({
+  type: 'holt_winters_with_fit',
+  addStrategy: addTransformationStrategy,
+  category: categories.Predictors,
+  params: [
+    { name: 'number', type: 'int', options: [5, 10, 20, 30, 40] },
+    { name: 'season', type: 'int', options: [0, 1, 2, 5, 10] },
+  ],
+  defaultParams: [10, 2],
   renderer: functionRenderer,
 });
 
@@ -268,7 +365,7 @@ register({
   type: 'bottom',
   addStrategy: replaceAggregationAddStrategy,
   category: categories.Selectors,
-  params: [{name: 'count', type: 'int'}],
+  params: [{ name: 'count', type: 'int' }],
   defaultParams: [3],
   renderer: functionRenderer,
 });
@@ -313,7 +410,7 @@ register({
   type: 'percentile',
   addStrategy: replaceAggregationAddStrategy,
   category: categories.Selectors,
-  params: [{name: 'nth', type: 'int'}],
+  params: [{ name: 'nth', type: 'int' }],
   defaultParams: [95],
   renderer: functionRenderer,
 });
@@ -322,7 +419,7 @@ register({
   type: 'top',
   addStrategy: replaceAggregationAddStrategy,
   category: categories.Selectors,
-  params: [{name: 'count', type: 'int'}],
+  params: [{ name: 'count', type: 'int' }],
   defaultParams: [3],
   renderer: functionRenderer,
 });
@@ -330,7 +427,7 @@ register({
 register({
   type: 'tag',
   category: groupByTimeFunctions,
-  params: [{name: 'tag', type: 'string', dynamicLookup: true}],
+  params: [{ name: 'tag', type: 'string', dynamicLookup: true }],
   defaultParams: ['tag'],
   renderer: fieldRenderer,
 });
@@ -339,7 +436,7 @@ register({
   type: 'math',
   addStrategy: addMathStrategy,
   category: categories.Math,
-  params: [{ name: "expr", type: "string"}],
+  params: [{ name: 'expr', type: 'string' }],
   defaultParams: [' / 100'],
   renderer: suffixRenderer,
 });
@@ -348,16 +445,16 @@ register({
   type: 'alias',
   addStrategy: addAliasStrategy,
   category: categories.Aliasing,
-  params: [{ name: "name", type: "string", quote: 'double'}],
+  params: [{ name: 'name', type: 'string', quote: 'double' }],
   defaultParams: ['alias'],
   renderMode: 'suffix',
   renderer: aliasRenderer,
 });
 
-
 export default {
   create: createPart,
-  getCategories: function() {
+  getCategories: () => {
     return categories;
-  }
+  },
+  replaceAggregationAdd: replaceAggregationAddStrategy,
 };

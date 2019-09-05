@@ -2,14 +2,18 @@
   "type": "datasource",
   "name": "CloudWatch",
   "id": "cloudwatch",
+  "category": "cloud",
 
+  "hiddenQueries": true,
   "metrics": true,
+  "alerting": true,
   "annotations": true,
 
   "info": {
+    "description": "Data source for Amazon AWS monitoring service",
     "author": {
       "name": "Grafana Project",
-      "url": "http://grafana.org"
+      "url": "https://grafana.com"
     },
     "logos": {
       "small": "img/amazon-web-services.png",
