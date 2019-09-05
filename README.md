@@ -1,15 +1,26 @@
-# heroku-grafana
+# heroku-grafana-6.3.5
 
-Run Grafana on Heroku
+## Dependencies
+Postgres's psql command
 
-## Automated Install
+Following link has information for Mac, Windows, and Linux
 
-Heroku-Grafana provides an automatic deployment script which will perform all of the following steps for you.
+https://devcenter.heroku.com/articles/heroku-postgresql#local-setup
+
+#### Thanks to @eliperelman for the scripts to setup the postgres database
+
+Run Grafana 6.3.5 on Heroku
+
+## Automated Install of Database
+
+Heroku-Grafana provides an automatic database setup script which will perform all of the following steps for you.
 
 Should you wish to use this script, simply invoke it as follows:
 
-```sh
-./deploy.sh <app name>
+```
+
+source deploy.sh <app name>
+
 ```
 
 Otherwise, please follow these steps to manually deploy Heroku-Grafana.
