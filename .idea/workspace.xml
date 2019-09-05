@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7078b7f7-4a8c-4fd6-bbdc-8302328a449a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/heroku-grafana.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/grafana-cli" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/grafana-cli.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/grafana-server" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/grafana-server.md5" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1680" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="heroku-grafana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku-grafana" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="heroku-grafana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku-grafana" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="heroku-grafana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku-grafana" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="heroku-grafana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku-grafana" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="heroku-grafana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku-grafana" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="heroku-grafana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="heroku-grafana" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin" />
+      <recent name="$PROJECT_DIR$/bin/old" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7078b7f7-4a8c-4fd6-bbdc-8302328a449a" name="Default Changelist" comment="" />
+      <created>1567700673874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567700673874</updated>
+      <workItem from="1567700674989" duration="1040000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1040000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960506" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="GraphQL" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/public/app/app.js.map" />
+        <option value="$PROJECT_DIR$/public/app/app.js" />
+        <option value="$PROJECT_DIR$/public/app/app.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/profiler.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/profiler.js" />
+        <option value="$PROJECT_DIR$/public/app/core/profiler.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/core_module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/core_module.js" />
+        <option value="$PROJECT_DIR$/public/app/core/core_module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/core.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/core.js" />
+        <option value="$PROJECT_DIR$/public/app/core/core.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/app_events.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/app_events.js" />
+        <option value="$PROJECT_DIR$/public/app/core/app_events.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/table_model.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/table_model.js" />
+        <option value="$PROJECT_DIR$/public/app/core/table_model.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/time_series2.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/time_series2.js" />
+        <option value="$PROJECT_DIR$/public/app/core/time_series2.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/live/live_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/live/live_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/core/live/live_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/file_export.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/file_export.js" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/file_export.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/flatten.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/flatten.js" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/flatten.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/datemath.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/datemath.js" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/datemath.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/rangeutil.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/rangeutil.js" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/rangeutil.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/colors.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/colors.js" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/colors.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/css_loader.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/css_loader.js" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/css_loader.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/model_utils.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/model_utils.js" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/model_utils.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/emitter.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/emitter.js" />
+        <option value="$PROJECT_DIR$/public/app/core/utils/emitter.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/routes/bundle_loader.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/routes/bundle_loader.js" />
+        <option value="$PROJECT_DIR$/public/app/core/routes/bundle_loader.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/routes/routes.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/routes/routes.js" />
+        <option value="$PROJECT_DIR$/public/app/core/routes/routes.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/filters/filters.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/filters/filters.js" />
+        <option value="$PROJECT_DIR$/public/app/core/filters/filters.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/services/keybindingSrv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/services/keybindingSrv.js" />
+        <option value="$PROJECT_DIR$/public/app/core/services/keybindingSrv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/services/dynamic_directive_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/services/dynamic_directive_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/core/services/dynamic_directive_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/services/alert_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/services/alert_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/core/services/alert_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/services/context_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/services/context_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/core/services/context_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/services/popover_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/services/popover_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/core/services/popover_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/services/util_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/services/util_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/core/services/util_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/services/backend_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/services/backend_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/core/services/backend_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/colorpicker.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/colorpicker.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/colorpicker.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/switch.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/switch.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/switch.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/dashboard_selector.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/dashboard_selector.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/dashboard_selector.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/grafana_app.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/grafana_app.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/grafana_app.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/info_popover.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/info_popover.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/info_popover.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/help/help.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/help/help.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/help/help.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/navbar/navbar.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/navbar/navbar.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/navbar/navbar.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/scroll/scroll.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/scroll/scroll.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/scroll/scroll.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/search/search.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/search/search.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/search/search.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/wizard/wizard.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/wizard/wizard.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/wizard/wizard.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/jsontree/jsontree.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/jsontree/jsontree.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/jsontree/jsontree.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/sidemenu/sidemenu.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/sidemenu/sidemenu.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/sidemenu/sidemenu.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/query_part/query_part.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/query_part/query_part.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/query_part/query_part.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/query_part/query_part_editor.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/query_part/query_part_editor.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/query_part/query_part_editor.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/components/layout_selector/layout_selector.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/components/layout_selector/layout_selector.js" />
+        <option value="$PROJECT_DIR$/public/app/core/components/layout_selector/layout_selector.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/plugin_component.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/plugin_component.js" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/plugin_component.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/array_join.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/array_join.js" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/array_join.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/rebuild_on_change.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/rebuild_on_change.js" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/rebuild_on_change.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/give_focus.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/give_focus.js" />
+        <option value="$PROJECT_DIR$/public/app/core/directives/give_focus.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/core/controllers/signup_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/core/controllers/signup_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/core/controllers/signup_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/sdk.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/sdk.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/sdk.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/query_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/query_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/query_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/datasource.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/datasource.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/app/testdata/datasource/datasource.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/text/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/text/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/text/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/template.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/template.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/template.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/thresholds_form.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/thresholds_form.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/thresholds_form.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/graph.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/graph.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/graph.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/axes_editor.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/axes_editor.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/axes_editor.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/threshold_manager.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/threshold_manager.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/threshold_manager.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/data_processor.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/data_processor.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/data_processor.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/data_processor_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/data_processor_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/data_processor_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/graph_ctrl_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/graph_ctrl_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/graph_ctrl_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/tooltip_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/tooltip_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/tooltip_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/graph_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/graph_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/graph_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/threshold_manager_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/threshold_manager_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/graph/specs/threshold_manager_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/editor.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/editor.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/editor.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/transformers.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/transformers.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/transformers.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/renderer.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/renderer.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/renderer.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/specs/transformers_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/specs/transformers_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/specs/transformers_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/specs/renderer_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/specs/renderer_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/table/specs/renderer_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/unknown/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/unknown/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/unknown/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/dashlist/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/dashlist/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/dashlist/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/alertlist/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/alertlist/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/alertlist/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/pluginlist/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/pluginlist/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/pluginlist/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/specs/singlestat-specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/specs/singlestat-specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/specs/singlestat-specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/specs/singlestat_panel_spec.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/specs/singlestat_panel_spec.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/panel/singlestat/specs/singlestat_panel_spec.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/mixed/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/mixed/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/mixed/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/mixed/datasource.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/mixed/datasource.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/mixed/datasource.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana/datasource.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana/datasource.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana/datasource.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/parser.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/parser.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/parser.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/query_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/query_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/query_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/lexer.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/lexer.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/lexer.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/datasource.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/datasource.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/datasource.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/parser_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/parser_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/parser_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/query_ctrl_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/query_ctrl_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/query_ctrl_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/datasource_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/datasource_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/datasource_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/lexer_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/lexer_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/lexer_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/gfunc_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/gfunc_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/graphite/specs/gfunc_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/influx_query.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/influx_query.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/influx_query.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/response_parser.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/response_parser.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/response_parser.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/query_part.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/query_part.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/query_part.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/query_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/query_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/query_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/datasource.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/datasource.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/datasource.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/response_parser_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/response_parser_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/response_parser_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/influx_series_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/influx_series_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/influx_series_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_part_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_part_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_part_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_builder_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_builder_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_builder_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_ctrl_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_ctrl_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/query_ctrl_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/influx_query_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/influx_query_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/influxdb/specs/influx_query_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/config_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/config_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/config_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/query_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/query_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/query_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/specs/query-ctrl-specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/specs/query-ctrl-specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/specs/query-ctrl-specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/specs/datasource-specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/specs/datasource-specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/opentsdb/specs/datasource-specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/query_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/query_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/query_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/specs/datasource_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/specs/datasource_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/specs/datasource_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/specs/annotation_query_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/specs/annotation_query_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/cloudwatch/specs/annotation_query_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/query_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/query_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/query_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/datasource.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/datasource.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/datasource.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/specs/metric_find_query_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/specs/metric_find_query_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/specs/metric_find_query_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/specs/datasource_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/specs/datasource_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/prometheus/specs/datasource_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana-live/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana-live/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana-live/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana-live/datasource.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana-live/datasource.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/grafana-live/datasource.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/config_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/config_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/config_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/query_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/query_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/query_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/module.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/module.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/module.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/query_def_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/query_def_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/query_def_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/query_builder_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/query_builder_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/query_builder_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/elastic_response_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/elastic_response_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/elastic_response_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/datasource_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/datasource_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/datasource_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/index_pattern_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/index_pattern_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/plugins/datasource/elasticsearch/specs/index_pattern_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/org/org_users_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/org/org_users_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/org/org_users_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/org/profile_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/org/profile_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/org/profile_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/org/prefs_control.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/org/prefs_control.js" />
+        <option value="$PROJECT_DIR$/public/app/features/org/prefs_control.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/admin/admin.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/admin/admin.js" />
+        <option value="$PROJECT_DIR$/public/app/features/admin/admin.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_directive.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_directive.js" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_directive.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/metrics_ds_selector.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/metrics_ds_selector.js" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/metrics_ds_selector.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/query_editor_row.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/query_editor_row.js" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/query_editor_row.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/metrics_panel_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/metrics_panel_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/metrics_panel_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_editor_tab.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_editor_tab.js" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/panel_editor_tab.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/query_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/query_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/panel/query_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/all.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/all.js" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/all.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/ds_list_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/ds_list_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/ds_list_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_list_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_list_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_list_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/ds_edit_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/ds_edit_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/ds_edit_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_edit_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_edit_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_edit_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_page_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_page_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/plugin_page_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/import_list/import_list.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/import_list/import_list.js" />
+        <option value="$PROJECT_DIR$/public/app/features/plugins/import_list/import_list.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/all.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/all.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/all.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/threshold_mapper.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/threshold_mapper.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/threshold_mapper.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_def.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_def.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_def.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_list_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_list_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_list_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/notifications_list_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/notifications_list_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/notifications_list_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_tab_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_tab_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_tab_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_model.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_model.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/alert_model.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/notification_edit_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/notification_edit_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/notification_edit_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/specs/threshold_mapper_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/specs/threshold_mapper_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/alerting/specs/threshold_mapper_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_edit_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_edit_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_edit_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_search.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_search.js" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_search.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlist_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlists_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlists_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/playlists_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/specs/playlist_edit_ctrl_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/specs/playlist_edit_ctrl_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/playlist/specs/playlist_edit_ctrl_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/snapshot/all.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/snapshot/all.js" />
+        <option value="$PROJECT_DIR$/public/app/features/snapshot/all.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/snapshot/snapshot_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/snapshot/snapshot_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/snapshot/snapshot_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/impression_store.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/impression_store.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/impression_store.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashboard_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashboard_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashboard_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dynamic_dashboard_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dynamic_dashboard_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dynamic_dashboard_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/alerting_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/alerting_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/alerting_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/upload.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/upload.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/upload.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dash_list_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dash_list_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dash_list_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/ad_hoc_filters.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/ad_hoc_filters.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/ad_hoc_filters.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashboard_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashboard_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashboard_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/model.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/model.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/model.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/options.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/options.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/options.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/row_model.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/row_model.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/row_model.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/add_panel.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/add_panel.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/add_panel.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/row_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/row_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/row/row_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dashboard_srv_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dashboard_srv_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dashboard_srv_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/row_model_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/row_model_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/row_model_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/exporter_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/exporter_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/exporter_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dynamic_dashboard_srv_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dynamic_dashboard_srv_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dynamic_dashboard_srv_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dash_import_ctrl_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dash_import_ctrl_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/specs/dash_import_ctrl_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/export/exporter.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/export/exporter.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/export/exporter.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/export/export_modal.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/export/export_modal.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/export/export_modal.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/import/dash_import.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/import/dash_import.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/import/dash_import.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashnav/dashnav.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashnav/dashnav.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/dashnav/dashnav.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/submenu/submenu.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/submenu/submenu.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/submenu/submenu.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/timepicker/input_date.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/timepicker/input_date.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/timepicker/input_date.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/timepicker/timepicker.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/timepicker/timepicker.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/timepicker/timepicker.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/repeat_option/repeat_option.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/repeat_option/repeat_option.js" />
+        <option value="$PROJECT_DIR$/public/app/features/dashboard/repeat_option/repeat_option.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/styleguide/styleguide.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/styleguide/styleguide.js" />
+        <option value="$PROJECT_DIR$/public/app/features/styleguide/styleguide.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/interval_variable.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/interval_variable.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/interval_variable.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/adhoc_variable.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/adhoc_variable.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/adhoc_variable.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/datasource_variable.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/datasource_variable.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/datasource_variable.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/query_variable.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/query_variable.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/query_variable.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/all.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/all.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/all.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/editor_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/editor_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/editor_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/variable.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/variable.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/variable.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/constant_variable.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/constant_variable.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/constant_variable.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/custom_variable.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/custom_variable.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/custom_variable.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/variable_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/variable_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/variable_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/template_srv_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/template_srv_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/template_srv_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_srv_init_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_srv_init_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_srv_init_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/adhoc_variable_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/adhoc_variable_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/adhoc_variable_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_srv_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_srv_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/variable_srv_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/query_variable_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/query_variable_specs.js" />
+        <option value="$PROJECT_DIR$/public/app/features/templating/specs/query_variable_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/annotations/editor_ctrl.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/annotations/editor_ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/features/annotations/editor_ctrl.d.ts" />
+        <option value="$PROJECT_DIR$/public/app/features/annotations/annotations_srv.js.map" />
+        <option value="$PROJECT_DIR$/public/app/features/annotations/annotations_srv.js" />
+        <option value="$PROJECT_DIR$/public/app/features/annotations/annotations_srv.d.ts" />
+        <option value="$PROJECT_DIR$/public/test/lib/common.js.map" />
+        <option value="$PROJECT_DIR$/public/test/lib/common.js" />
+        <option value="$PROJECT_DIR$/public/test/lib/common.d.ts" />
+        <option value="$PROJECT_DIR$/public/test/core/table_model_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/test/core/table_model_specs.js" />
+        <option value="$PROJECT_DIR$/public/test/core/table_model_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/emitter_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/emitter_specs.js" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/emitter_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/rangeutil_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/rangeutil_specs.js" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/rangeutil_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/flatten_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/flatten_specs.js" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/flatten_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/datemath_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/datemath_specs.js" />
+        <option value="$PROJECT_DIR$/public/test/core/utils/datemath_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/test/specs/app_specs.js.map" />
+        <option value="$PROJECT_DIR$/public/test/specs/app_specs.js" />
+        <option value="$PROJECT_DIR$/public/test/specs/app_specs.d.ts" />
+        <option value="$PROJECT_DIR$/public/vendor/npm/reflect-metadata/Reflect.js" />
+      </list>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/conf/defaults.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/robots.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
